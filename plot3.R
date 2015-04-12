@@ -8,7 +8,7 @@ SubMetering2 <- as.numeric(datasubset$Sub_metering_2)
 SubMetering3 <- as.numeric(datasubset$Sub_metering_3)
 GlobalActivePower <- as.numeric(datasubset$Global_active_power)
 
-png("plot3.png", widht=480, height=480)
+png("plot3.png", width=480, height=480)
 plot(dateandtime, SubMetering1, type="l", xlab="", ylab="Energy sub metering", main="")
 lines(dateandtime, SubMetering2, type="l", col="red")
 lines(dateandtime, SubMetering3, type="l", col="blue")
